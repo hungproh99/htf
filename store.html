@@ -1127,6 +1127,8 @@
 
 				// Render products for current page
 				function renderProducts() {
+					viewGrid.click(); // Ensure grid view by default
+
 					const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
 					const endIndex = startIndex + ITEMS_PER_PAGE;
 					const currentProducts = products.slice(startIndex, endIndex);
